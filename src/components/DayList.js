@@ -10,10 +10,10 @@ export default function DayList(props) {
         key={DLI.id}
         name={DLI.name} 
         spots={DLI.spots}
-        selected={DLI.name === props.day}
-        setDay={props.setDay}  
+        selected={DLI.name === props.value}
+        setDay={props.onChange}  
       />)
-    });
+  });
 
   return (
     <ul>{listItems}</ul>
